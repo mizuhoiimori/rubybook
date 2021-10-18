@@ -1,36 +1,51 @@
-def order(item)
-   "#{item}ください"
-end
+# def order
+#   puts "カフェラテください"
+# end
 
-puts order("カフェラテ")
-puts order("モカ")
+# order
 
-def area(x)
-  x * x
-end
+# def area
+#   3 * 3
+# end
 
-puts area(3)
+# puts area
 
-def dice
-  result = [1, 2, 3, 4, 5, 6].sample
-  return result unless  result == 1
-    puts "もう一回"
-    [1, 2, 3, 4, 5, 6].sample
-end
+# def dice
+#   puts "エンターを押してください"
+#   x = gets
+#   result = [1, 2, 3, 4, 5, 6].sample
+#   x = result
+# end
 
-puts dice
+# puts dice
+
+# def order(menu)
+#   "#{menu}ください"
+# end
+
+# puts order("カフェラテ")
+# puts order("モカ")
+
+# def dice
+#   puts "エンターを押してください"
+#   x = gets
+#   result = [1, 2, 3, 4, 5, 6].sample
+#   x = result
+# end
+
+# def dice_onemore
+#   result = dice
+#   return result unless result == 1
+#   puts "もう一回"
+#   dice  
+# end
+
+# puts dice_onemore
 
 def price(item:, size: "ショート")
-  items = {"コーヒー" => 300, "カフェラテ" => 400}
-  sizes = {"ショート" => 0, "トール" => 50, "ベンティ" => 100}
+  items = { "コーヒー" => 300, "カフェラテ" => 400 }
+  sizes = { "ショート" => 0, "トール" => 50, "ベンティ" => 100 }
   items[item] + sizes[size]
 end
 
-puts price(item: "コーヒー")
-
-def order_add
-  drink = "コーヒー"
-  puts "#{drink}をください"
-end
-
-order_add
+puts price(item:"コーヒー")
